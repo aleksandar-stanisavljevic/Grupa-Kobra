@@ -1,0 +1,158 @@
+#home > div:nth-of-type(odd) {
+  box-sizing: border-box;
+  line-height: auto; }
+  #home > div:nth-of-type(odd) div:first-child {
+    display: inline-block;
+    width: 12%;
+    padding: 1%;
+    vertical-align: middle; }
+    #home > div:nth-of-type(odd) div:first-child img {
+      width: 100%;
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      padding: 3px;
+      border-radius: 3px;
+      box-sizing: border-box; }
+  #home > div:nth-of-type(odd) div:nth-child(2) {
+    display: inline-block;
+    width: 76%;
+    padding-right: 1%;
+    padding-left: 1%;
+    vertical-align: top;
+    text-align: justify;
+    font-family: Helvetica, Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.8); }
+  #home > div:nth-of-type(odd) div:last-child {
+    display: inline-block;
+    width: 6%;
+    margin-right: 1%;
+    margin-left: 1%;
+    vertical-align: top; }
+    #home > div:nth-of-type(odd) div:last-child p {
+      font-family: Helvetica, Arial, sans-serif;
+      border-radius: 3px;
+      background: #d9534f;
+      color: white;
+      text-align: center;
+      font-size: 12px;
+      padding: 2% 0 2% 0; }
+
+#home > div:nth-of-type(even) {
+  box-sizing: border-box;
+  line-height: auto; }
+  #home > div:nth-of-type(even) div:first-child {
+    display: inline-block;
+    width: 6%;
+    margin-right: 1%;
+    margin-left: 1%;
+    vertical-align: top; }
+    #home > div:nth-of-type(even) div:first-child p {
+      font-family: Helvetica, Arial, sans-serif;
+      border-radius: 3px;
+      background: #d9534f;
+      color: white;
+      text-align: center;
+      font-size: 12px;
+      padding: 2% 0 2% 0; }
+  #home > div:nth-of-type(even) div:nth-child(2) {
+    display: inline-block;
+    width: 76%;
+    padding-right: 1%;
+    padding-left: 1%;
+    vertical-align: top;
+    text-align: justify;
+    font-family: Helvetica, Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.8); }
+  #home > div:nth-of-type(even) div:last-child {
+    display: inline-block;
+    width: 12%;
+    padding: 1%;
+    vertical-align: middle; }
+    #home > div:nth-of-type(even) div:last-child img {
+      width: 100%;
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      padding: 3px;
+      border-radius: 3px;
+      box-sizing: border-box; }
+
+@media only screen and (min-width: 960px) and (max-width: 1023px) {
+  #home > div:nth-of-type(odd) div:nth-child(2) {
+    width: 75%;
+    font-size: 15px; }
+  #home > div:nth-of-type(odd) div:last-child {
+    width: 7%; }
+    #home > div:nth-of-type(odd) div:last-child p {
+      font-size: 11px;
+      padding: 4% 0 4% 0; }
+
+  #home > div:nth-of-type(even) div:first-child {
+    width: 7%; }
+    #home > div:nth-of-type(even) div:first-child p {
+      font-size: 11px;
+      padding: 4% 0 4% 0; }
+  #home > div:nth-of-type(even) div:nth-child(2) {
+    width: 75%;
+    font-size: 15px; } }
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  #home > div:nth-of-type(odd) div:nth-child(2) {
+    width: 74%;
+    font-size: 14px; }
+  #home > div:nth-of-type(odd) div:last-child {
+    width: 8%; }
+    #home > div:nth-of-type(odd) div:last-child p {
+      font-size: 11px;
+      padding: 4% 0 4% 0; }
+
+  #home > div:nth-of-type(even) div:first-child {
+    width: 8%; }
+    #home > div:nth-of-type(even) div:first-child p {
+      font-size: 11px;
+      padding: 4% 0 4% 0; }
+  #home > div:nth-of-type(even) div:nth-child(2) {
+    width: 74%;
+    font-size: 14px; } }
+@media only screen and (min-width: 520px) and (max-width: 767px) {
+  #home > div:nth-of-type(odd) div:first-child {
+    width: 15%; }
+  #home > div:nth-of-type(odd) div:nth-child(2) {
+    width: 70%;
+    font-size: 12px; }
+  #home > div:nth-of-type(odd) div:last-child {
+    width: 9%; }
+    #home > div:nth-of-type(odd) div:last-child p {
+      font-size: 9px;
+      padding: 4% 0 4% 0; }
+
+  #home > div:nth-of-type(even) div:first-child {
+    width: 9%; }
+    #home > div:nth-of-type(even) div:first-child p {
+      font-size: 9px;
+      padding: 4% 0 4% 0; }
+  #home > div:nth-of-type(even) div:nth-child(2) {
+    width: 70%;
+    font-size: 12px; }
+  #home > div:nth-of-type(even) div:last-child {
+    width: 15%; } }
+@media only screen and (max-width: 519px) {
+  #home > div:nth-of-type(odd) div:first-child {
+    width: 17%; }
+  #home > div:nth-of-type(odd) div:nth-child(2) {
+    width: 67%;
+    font-size: 10px; }
+  #home > div:nth-of-type(odd) div:last-child {
+    width: 10%; }
+    #home > div:nth-of-type(odd) div:last-child p {
+      font-size: 6px;
+      padding: 4% 0 4% 0; }
+
+  #home > div:nth-of-type(even) div:first-child {
+    width: 10%; }
+    #home > div:nth-of-type(even) div:first-child p {
+      font-size: 6px;
+      padding: 4% 0 4% 0; }
+  #home > div:nth-of-type(even) div:nth-child(2) {
+    width: 67%;
+    font-size: 10px; }
+  #home > div:nth-of-type(even) div:last-child {
+    width: 17%; } }
+
+/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,94 @@
+.campText {
+	color: rgba(0, 0, 0, 0.7);
+	font-family: Helvetica,Arial,sans-serif;
+	text-align: justify;
+}
+
+.hText {
+	font-family: Helvetica,Arial,sans-serif;
+}
+
+.campName{
+	font-family: Helvetica,Arial,sans-serif; 
+	color: rgba(0, 0, 0, 0.8);
+	font-size: 30px;
+}
+
+.butt{
+	font-size: 18px;
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1023px) {
+	.campText{
+		font-size: 16px;
+	}
+	.hText{
+		font-size: 16px;
+	}
+	.campName{
+		font-size: 28px;
+	}
+	.butt{
+		font-size: 17px;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.campText{
+		font-size: 14px;
+	}
+	.hText{
+		font-size: 14px;
+	}
+	.campName{
+		font-size: 25px;
+	}
+	.butt{
+		font-size: 16px;
+	}
+}
+
+@media only screen and (min-width: 520px) and (max-width: 767px) {
+	.campText{
+		font-size: 12px;
+	}
+	.hText{
+		font-size: 12px;
+	}
+	.campName{
+		font-size: 22px;
+	}
+	.butt{
+		font-size: 15px;
+	}
+}
+
+@media only screen and (min-width: 420px) and (max-width: 519px) {
+	.campText{
+		font-size: 11px;
+	}
+	.hText{
+		font-size: 11px;
+	}
+	.campName{
+		font-size: 20px;
+	}
+	.butt{
+		font-size: 14px;
+	}
+}
+
+@media only screen and (max-width: 419px) {
+	.campText{
+		font-size: 9px;
+	}
+	.hText{
+		font-size: 9px;
+	}
+	.campName{
+		font-size: 18px;
+	}
+	.butt{
+		font-size: 13px;
+	}
+}

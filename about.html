@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="grupakobra.rs, grupa kobra, kobra, www.grupakobra.rs">
+  <meta name="description" content="Grupa Kobra je omladinska organizacija nastala iz dosade mladih ljudi koji nisu imali ni jedno mesto u svojim selima (D.Trnava i D.Toponica kod Niša">
+  <meta property="og:title" content="Grupa Kobra">
+
+  <title>Grupa Kobra</title>
+
+  <link href="images/logo.png" rel="icon">
+  <link rel="stylesheet" href="css/mystyle.css">
+
+</head>
+<body onresize="collapseMenuHidden()" onload="showPeople(we)">
+
+<div id="container">
+  <nav>
+    <a href="index.html">
+      <img src="images/logo.png" alt="Logo Kobra">
+    </a>
+    <a id="collapseNav">
+      <img onclick="collapseMenu()" src="images/menu.png" alt="Collapse Menu">
+    </a>
+    <div id="newNav"></div>
+    <ul>
+      <li class="navbar">
+        <a href="index.html">
+          <img src="images/home.png" alt="Home"> Početna
+        </a>
+      </li>
+      <li class="navbar">
+        <a href="about.html">
+          <img src="images/info.png" alt="About"> O nama
+        </a>
+      </li>
+      <li class="navbar">
+        <a href="results.html">
+          <img src="images/plane.png" alt="Results"> Rezultati
+        </a>
+      </li>
+      <li class="navbar">
+        <a href="camp.html">
+          <img src="images/summer.png" alt="Camp"> Summer in Toponica
+        </a>
+      </li>
+      <li class="navbar">
+        <a href="eco.html">
+          <img src="images/leaf.png" alt="Eco"> Eko kontakt tačka
+        </a>
+      </li>
+      <li class="navbar">
+        <a href="partners.html">
+          <img src="images/partners.png" alt="Partners"> Partneri i donatori
+        </a>
+      </li>
+      <li class="navbar">
+        <a href="contact.html">
+          <img src="images/envelope.png" alt="Contact"> Kontakt
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <header>
+    <div>Grupa Kobra</div>
+    <div>
+      <img src="images/logo.png" alt="Logo Kobra">
+    </div>
+    <div>Mi smo grupa mladih ljudi koji menjaju stvari u svojoj lokalnoj zajednici.</div>
+  </header>
+
+  <div id="about">
+    <p>O nama</p>
+    <p>O nama</p>
+    <hr>
+    <div id="organisation">
+      <div>
+        <p id="history">Istorija grupe</p><br>
+        <p>
+          Grupa Kobra je omladinska organizacija nastala iz dosade mladih ljudi koji nisu imali ni jedno mesto
+          u svojim selima (D.Trnava i D.Toponica kod Niša, ali i okolna sela) gde bi mogli da se okupe i druže.
+          Pošto se jedina svetla tačka ugasila, a to je bio karate klub "Kobra", nekadašnji članovi tog tima,
+          rešili su da se bave ruralnim razvojem i pokrenu svoju zajednicu pod tim imenom. Još od 2007. godine,
+          kada su krenuli sa aktivizmom, nisu prestali da deluju zarad svoje zajednice. Za tih 7 godina, koliko
+          je prošlo, realizovali su preko 20 projekata koji se tiču zaštite životne sredine, podsticaja omladinskog
+          aktivizma u ruralnim sredinama i očuvanja tradicije i kulture. Najznačajniji rezultati projekata su
+          rekonstruisan i adaptiran stari i napušteni Dom kulutre u D.Toponici gde se sada tamo nalazi seoska
+          biblioteka, sala za projekcije, sala za stoni-tenis, šah, folklor, stoni-fudbal, pikado, tamo su računari
+          i besplatan interent. Zatim, projekati kojim su uklonjene dve velike divlje deponije, u D.Trnavi i
+          D.Toponici i na tim mestima napravljeni park za decu, teren za odbojku na pesku, mini izletište sa tri
+          letnjikovca i dr.
+        </p>
+        <p>
+          Grupa broji 53 člana i volontera, od toga prvi tim čini njih 10 aktivnih koji se dva puta nedeljno,
+          utorkom i četvrtkom od 19h, okupljaju i potpuno volonterski rade na ostvarivanju ciljeva Grupe.
+        </p>
+        <p>
+          Od 2012. godine, Grupa organizuje medjunarodne volonterske kampove putem kojih svakog leta oko 15-ak
+          stranih volontera dođe i dve nedelje pomaže domaćim volonterima na uređivanju sela i širenju ideje
+          multikulturalizma.
+        </p>
+        <div>
+          <p id="mission">
+            Misija Grupe Kobra je da putem organizovanja raznih tematskih događaja, edukacija, sastanaka,
+            seminara, kampova za mlade i akcija, utiče na podizanje svesti građana o neophodnosti očuvanja
+            životne sredine i na pospešivanje sveobuhvatnog ruralnog razvoja kojim će se stovriti uslovi za
+            život u selima po meri svih građana, posebno mladih. Teritorija delovanja Grupe su sela Donja Trnava
+            i Donja Toponica u GO Crveni Krst - Niš.
+          </p>
+        </div>
+      </div>
+      <div>
+        <table cellspacing="0" cellpadding="0">
+          <tr>
+            <th colspan="2">Podaci</th>
+          </tr>
+          <tr>
+            <td>Početak</td>
+            <td>2007.</td>
+          </tr>
+          <tr>
+            <td>Ime</td>
+            <td>Grupa Kobra</td>
+          </tr>
+          <tr>
+            <td>Organizacija</td>
+            <td>Neprofitna nevladina organizacija</td>
+          </tr>
+          <tr>
+            <td>Broj članova</td>
+            <td>53</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <hr>
+    <div id="people_data"></div>
+  </div>
+</div>
+
+<footer>
+  <div>
+    <h5>Linkovi</h5>
+    <p><a href="index.html">Home</a></p>
+    <p><a href="about.html">O nama</a></p>
+    <p><a href="results.html">Rezultati</a></p>
+    <p><a href="camp.html">Summer in Toponica</a></p>
+    <p><a href="eco.html">Eko kontakt tačka</a></p>
+    <p><a href="partners.html">Partneri i donatori</a></p>
+    <p><a href="contact.html">Kontakt</a></p>
+  </div>
+
+  <div>
+    <h5>Naša adresa</h5>
+    <address>
+      <p>
+        <a href="https://www.google.rs/maps/place/%D0%94%D0%BE%D1%9A%D0%B0+%D0%A2%D0%BE%D0%BF%D0%BE%D0%BD%D0%B8%D1%86%D0%B0/@43.4090049,21.7691087,14z/data=!3m1!4b1!4m5!3m4!1s0x4755cbce3cd73f3f:0xd24e6b69f810a4c9!8m2!3d43.4096259!4d21.7890789" target="_blank">Donja Toponica, BB Niš</a>
+      </p>
+      <p>
+        <span>&phone;</span>
+        <a href="tel:+381604601645">+381 604601645</a>
+      </p>
+      <p>
+        <a href="mailto:milangrupakobra@gmail.com">
+          <span>&#9993;</span> milangrupakobra@gmail.com
+        </a>
+      </p>
+    </address>
+  </div>
+
+  <div>
+    <a href="https://www.facebook.com/kobratoponica/" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+    <a href="https://twitter.com/grupakobra" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+    <a href="https://www.youtube.com/user/grupakobra" target="_blank"><img src="images/youtube.png" alt="YouTube"></a>
+    <a href="http://grupakobra.tumblr.com/" target="_blank"><img src="images/tumblr.png" alt="Tumblr"></a>
+  </div>
+
+  <p>© Copyright 2017. Grupa Kobra</p>
+
+</footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-99094922-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script src="js/collapseMenu.js"></script>
+<script src="js/about.js"></script>
+
+</body>
+</html>

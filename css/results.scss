@@ -1,0 +1,399 @@
+$font: Helvetica,Arial,sans-serif;
+$fontColor: rgba(0, 0, 0, 0.8);
+$borderStyle: 1px solid rgba(0, 0, 0, 0.4);
+$tabFontColor: #428bca;
+$yearBackground: #5cb85c;
+$yearColor: white;
+$imgBorderColor: rgba(0, 0, 0, 0.15);
+$width1024: 1024px;
+$width960: 960px;
+$width768: 768px;
+$width520: 520px;
+
+@mixin tabStyle {
+  border-bottom: $borderStyle;
+  padding: 1%;
+
+  & > a {
+    color: $tabFontColor;
+  }
+}
+
+@mixin imageStyle {
+  display: inline-block;
+  width: 12%;
+  padding: 1%;
+  vertical-align: top;
+
+  img {
+    width: 100%;
+    border: 1px solid $imgBorderColor;
+    padding: 3px;
+    border-radius: 3px;
+  }
+}
+
+@mixin descriptionStyle {
+  width: 96.5%;
+  padding-right: 2%;
+  padding-left: 1.5%;
+  padding-top: 2%;
+  text-align: justify;
+  font-family: $font;
+  color: $fontColor;
+  font-size: 15px;
+  padding-bottom: 2%;
+}
+
+@mixin resultsHeaderStyle {
+  display: inline-block;
+  width: 55.5%;
+  padding-right: 2%;
+  padding-left: 1.5%;
+  padding-top: 1%;
+  font-family: $font;
+  color: $fontColor;
+  font-weight: bold;
+}
+
+@mixin yearStyle {
+  display: inline-block;
+  width: 38%;
+  margin-left: 1%;
+  margin-top: 1%;
+
+  span {
+    float: right;
+    font-family: $font;
+    border-radius: 3px;
+    background: $yearBackground;
+    color: $yearColor;
+    padding: 1.5%;
+    text-align: center;
+    font-size: 12px;
+  }
+}
+
+@mixin imgStyleSmall {
+  float: left;
+  width: 20%;
+  border: 1px solid $imgBorderColor;
+  padding: 1%;
+  border-radius: 3px;
+  margin-right: 1.5%;
+}
+
+@mixin resultsStyleSmall {
+  display: inline-block;
+  width: 55%;
+  margin-top: 0;
+  font-family: $font;
+  color: $fontColor;
+  font-weight: bold;
+  text-align: left;
+}
+
+@mixin yearStyleSmall {
+  display: inline;
+  width: 10%;
+
+  span {
+    float: right;
+    font-family: $font;
+    border-radius: 3px;
+    background: $yearBackground;
+    color: $yearColor;
+    padding: 1%;
+    text-align: center;
+    font-size: 10px;
+  }
+}
+
+#results {
+
+  .smallResults {
+    display: none;
+  }
+
+  table {
+    border-collapse: separate;
+    border-spacing: 0px;
+    width: 100%;
+
+    .contentResults {
+      .textResults {
+        display: inline-block;
+        width: 86%;
+      }
+      .eventsImage {
+        @include imageStyle;
+      }
+      .headerStyle {
+        @include resultsHeaderStyle;
+      }
+      .descriptionResult {
+        @include descriptionStyle;
+      }
+      .year {
+        @include yearStyle;
+      }
+    }
+
+    #eventsCategory {
+      border: $borderStyle;
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+      border-bottom: none;
+      padding: 1%;
+
+      & > a {
+        color: $fontColor;
+      }
+    }
+    #actionCategory {
+      @include tabStyle;
+    }
+    #projectCategory {
+      @include tabStyle;
+    }
+    #campCategory {
+      @include tabStyle;
+    }
+    #awardCategory {
+      @include tabStyle;
+    }
+
+    .navResults > a {
+      text-align: center;
+      transition: 0.3s;
+      font-size: 17px;
+      text-decoration: none;
+    }
+
+    #events {
+      display: block;
+    }
+
+    .contentResults {
+      display: none;
+      padding-top: 1%;
+      border: $borderStyle;
+      border-top: none;
+    }
+  }
+}
+
+@media only screen and (min-width: $width960) and (max-width: $width1024 - 1) {
+
+  @mixin descriptionStyle {
+    font-size: 14px;
+  }
+
+  @mixin resultsHeaderStyle {
+    font-size: 15px;
+  }
+
+  @mixin yearStyle {
+    span {
+      font-size: 11px;
+    }
+  }
+
+  #results {
+    table {
+      .contentResults {
+        .headerStyle {
+          @include resultsHeaderStyle;
+        }
+        .descriptionResult {
+          @include descriptionStyle;
+        }
+        .year {
+          @include yearStyle;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $width768) and (max-width: $width960 - 1) {
+
+  @mixin imageStyle {
+    width: 18%;
+  }
+
+  @mixin descriptionStyle {
+    font-size: 13px;
+    width: 96%;
+    padding-left: 2%;
+  }
+
+  @mixin resultsHeaderStyle {
+    font-size: 14px;
+    width: 55%;
+    padding-left: 2%;
+  }
+
+  @mixin yearStyle {
+    span {
+      font-size: 11px;
+    }
+  }
+
+  #results {
+    table {
+      .contentResults {
+        .textResults {
+          width: 80%;
+        }
+        .eventsImage {
+          @include imageStyle;
+        }
+        .headerStyle {
+          @include resultsHeaderStyle;
+        }
+        .descriptionResult {
+          @include descriptionStyle;
+        }
+      }
+
+      .navResults > a {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $width520) and (max-width: $width768 - 1) {
+
+  @mixin imageStyle {
+    display: none;
+  }
+
+  @mixin descriptionStyle {
+    width: 95%;
+    padding-right: 2%;
+    padding-left: 2%;
+    font-size: 12px;
+    padding-bottom: 4%;
+  }
+
+  @mixin resultsHeaderStyle {
+    display: none;
+  }
+
+  @mixin yearStyle {
+    display: none;
+  }
+
+  #results {
+
+    .smallResults {
+      display: block;
+    }
+
+    img.smallResults {
+      @include imgStyleSmall;
+    }
+
+    p.smallResults:nth-child(2) {
+      @include resultsStyleSmall;
+      font-size: 13px;
+    }
+
+    p.smallResults:nth-child(3) {
+      @include yearStyleSmall;
+    }
+
+    table {
+      .contentResults {
+        .textResults {
+          width: 100%;
+        }
+        .eventsImage {
+          @include imageStyle;
+        }
+        .headerStyle {
+          @include resultsHeaderStyle;
+        }
+        .descriptionResult {
+          @include descriptionStyle;
+        }
+        .year {
+          @include yearStyle;
+        }
+      }
+
+      .navResults > a {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $width520 - 1) {
+
+  @mixin imageStyle {
+    display: none;
+  }
+
+  @mixin descriptionStyle {
+    width: 95%;
+    padding-right: 2%;
+    padding-left: 2%;
+    font-size: 11px;
+    padding-bottom: 4%;
+  }
+
+  @mixin resultsHeaderStyle {
+    display: none;
+  }
+
+  @mixin yearStyle {
+    display: none;
+  }
+
+  #results {
+
+    .smallResults {
+      display: block;
+    }
+
+    img.smallResults {
+      @include imgStyleSmall;
+    }
+
+    p.smallResults:nth-child(2) {
+      @include resultsStyleSmall;
+      font-size: 11.5px;
+    }
+
+    p.smallResults:nth-child(3) {
+      @include yearStyleSmall;
+    }
+
+    table {
+      .contentResults {
+        .textResults {
+          width: 100%;
+        }
+        .eventsImage {
+          @include imageStyle;
+        }
+        .headerStyle {
+          @include resultsHeaderStyle;
+        }
+        .descriptionResult {
+          @include descriptionStyle;
+        }
+        .year {
+          @include yearStyle;
+        }
+      }
+
+      .navResults > a {
+        font-size: 10px;
+      }
+    }
+  }
+}

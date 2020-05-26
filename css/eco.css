@@ -1,0 +1,60 @@
+.ecoText {
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: justify; }
+
+.nameRec {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: bold; }
+
+.ecoHeader {
+  font-size: 16px;
+  font-weight: bold; }
+
+@media only screen and (min-width: 960px) and (max-width: 1023px) {
+  .ecoText {
+    font-size: 16px; }
+
+  .ecoHeader {
+    font-size: 16px; }
+
+  .pdfSenka {
+    width: 100%; } }
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .ecoText {
+    font-size: 14px; }
+
+  .ecoHeader {
+    font-size: 14px; }
+
+  .pdfSenka {
+    width: 100%; } }
+@media only screen and (min-width: 520px) and (max-width: 767px) {
+  .ecoText {
+    font-size: 12px; }
+
+  .ecoHeader {
+    font-size: 12px; }
+
+  .pdfSenka {
+    width: 100%; } }
+@media only screen and (min-width: 420px) and (max-width: 519px) {
+  .ecoText {
+    font-size: 10px; }
+
+  .ecoHeader {
+    font-size: 10px; }
+
+  .pdfSenka {
+    width: 100%; } }
+@media only screen and (max-width: 419px) {
+  .ecoText {
+    font-size: 9px; }
+
+  .ecoHeader {
+    font-size: 9px; }
+
+  .pdfSenka {
+    width: 100%; } }
+
+/*# sourceMappingURL=eco.css.map */

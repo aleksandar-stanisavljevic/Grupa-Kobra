@@ -1,0 +1,100 @@
+[15-Apr-2017 22:16:39 Europe/Belgrade] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/grupakob/public_html/server.php on line 6
+[15-Apr-2017 22:16:39 Europe/Belgrade] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/grupakob/public_html/server.php on line 6
+[15-Apr-2017 22:16:39 Europe/Belgrade] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/grupakob/public_html/server.php on line 11
+[15-Apr-2017 22:16:39 Europe/Belgrade] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/grupakob/public_html/server.php on line 29
+[15-Apr-2017 22:16:39 Europe/Belgrade] PHP Warning:  Invalid argument supplied for foreach() in /home/grupakob/public_html/server.php on line 31
+[15-Apr-2017 22:39:30 Europe/Belgrade] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/grupakob/public_html/server.php on line 6
+[15-Apr-2017 22:39:30 Europe/Belgrade] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/grupakob/public_html/server.php on line 6
+[15-Apr-2017 22:39:30 Europe/Belgrade] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/grupakob/public_html/server.php on line 11
+[15-Apr-2017 22:39:30 Europe/Belgrade] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/grupakob/public_html/server.php on line 29
+[15-Apr-2017 22:39:30 Europe/Belgrade] PHP Warning:  Invalid argument supplied for foreach() in /home/grupakob/public_html/server.php on line 31
+[16-Apr-2017 16:11:49 Europe/Belgrade] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/grupakob/public_html/server.php on line 6
+[16-Apr-2017 16:11:49 Europe/Belgrade] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/grupakob/public_html/server.php on line 6
+[16-Apr-2017 16:11:49 Europe/Belgrade] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/grupakob/public_html/server.php on line 11
+[16-Apr-2017 16:11:49 Europe/Belgrade] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/grupakob/public_html/server.php on line 29
+[16-Apr-2017 16:11:49 Europe/Belgrade] PHP Warning:  Invalid argument supplied for foreach() in /home/grupakob/public_html/server.php on line 31
+[17-Apr-2017 19:48:51 Europe/Belgrade] PHP Warning:  Invalid argument supplied for foreach() in /home/grupakob/public_html/server.php on line 31
+[17-Apr-2017 20:05:11 Europe/Belgrade] PHP Warning:  Invalid argument supplied for foreach() in /home/grupakob/public_html/server.php on line 31
+[17-Apr-2017 20:05:15 Europe/Belgrade] PHP Warning:  Invalid argument supplied for foreach() in /home/grupakob/public_html/server.php on line 31
+[17-Apr-2017 20:05:19 Europe/Belgrade] PHP Warning:  Invalid argument supplied for foreach() in /home/grupakob/public_html/server.php on line 31
+[17-Apr-2017 20:05:29 Europe/Belgrade] PHP Warning:  Invalid argument supplied for foreach() in /home/grupakob/public_html/server.php on line 31
+[17-Apr-2017 20:05:37 Europe/Belgrade] PHP Warning:  Invalid argument supplied for foreach() in /home/grupakob/public_html/server.php on line 31
+[17-Apr-2017 20:05:37 Europe/Belgrade] PHP Warning:  Invalid argument supplied for foreach() in /home/grupakob/public_html/server.php on line 31
+[17-Apr-2017 20:05:39 Europe/Belgrade] PHP Warning:  Invalid argument supplied for foreach() in /home/grupakob/public_html/server.php on line 31
+[17-Apr-2017 20:05:57 Europe/Belgrade] PHP Warning:  Invalid argument supplied for foreach() in /home/grupakob/public_html/server.php on line 31
+[13-May-2017 20:21:53 UTC] PHP Warning:  include_once(analyticstracking.php): failed to open stream: No such file or directory in /home/grupakob/public_html/server.php on line 1
+[13-May-2017 20:21:53 UTC] PHP Warning:  include_once(): Failed opening 'analyticstracking.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/grupakob/public_html/server.php on line 1
+[13-May-2017 20:22:03 UTC] PHP Warning:  include_once(analyticstracking.php): failed to open stream: No such file or directory in /home/grupakob/public_html/server.php on line 1
+[13-May-2017 20:22:03 UTC] PHP Warning:  include_once(): Failed opening 'analyticstracking.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/grupakob/public_html/server.php on line 1
+[13-May-2017 20:22:14 UTC] PHP Warning:  include_once(analyticstracking.php): failed to open stream: No such file or directory in /home/grupakob/public_html/server.php on line 1
+[13-May-2017 20:22:14 UTC] PHP Warning:  include_once(): Failed opening 'analyticstracking.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/grupakob/public_html/server.php on line 1
+[13-May-2017 20:22:26 UTC] PHP Warning:  include_once(analyticstracking.php): failed to open stream: No such file or directory in /home/grupakob/public_html/server.php on line 1
+[13-May-2017 20:22:26 UTC] PHP Warning:  include_once(): Failed opening 'analyticstracking.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/grupakob/public_html/server.php on line 1
+[13-May-2017 20:22:26 UTC] PHP Warning:  include_once(analyticstracking.php): failed to open stream: No such file or directory in /home/grupakob/public_html/server.php on line 1
+[13-May-2017 20:22:26 UTC] PHP Warning:  include_once(): Failed opening 'analyticstracking.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/grupakob/public_html/server.php on line 1
+[13-May-2017 20:22:31 UTC] PHP Warning:  include_once(analyticstracking.php): failed to open stream: No such file or directory in /home/grupakob/public_html/server.php on line 1
+[13-May-2017 20:22:31 UTC] PHP Warning:  include_once(): Failed opening 'analyticstracking.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/grupakob/public_html/server.php on line 1
+[13-May-2017 20:23:41 UTC] PHP Warning:  include_once(analyticstracking.php): failed to open stream: No such file or directory in /home/grupakob/public_html/server.php on line 1
+[13-May-2017 20:23:41 UTC] PHP Warning:  include_once(): Failed opening 'analyticstracking.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/grupakob/public_html/server.php on line 1
+[13-May-2017 21:32:22 UTC] PHP Warning:  include_once(analyticstracking.php): failed to open stream: No such file or directory in /home/grupakob/public_html/server.php on line 1
+[13-May-2017 21:32:22 UTC] PHP Warning:  include_once(): Failed opening 'analyticstracking.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/grupakob/public_html/server.php on line 1
+[26-May-2017 14:49:50 UTC] PHP Warning:  include_once(analyticstracking.php): failed to open stream: No such file or directory in /home/grupakob/public_html/server.php on line 1
+[26-May-2017 14:49:50 UTC] PHP Warning:  include_once(): Failed opening 'analyticstracking.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/grupakob/public_html/server.php on line 1
+[30-May-2017 08:17:48 UTC] PHP Warning:  include_once(analyticstracking.php): failed to open stream: No such file or directory in /home/grupakob/public_html/server.php on line 1
+[30-May-2017 08:17:48 UTC] PHP Warning:  include_once(): Failed opening 'analyticstracking.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/grupakob/public_html/server.php on line 1
+[05-Jun-2017 16:51:53 UTC] PHP Warning:  include_once(analyticstracking.php): failed to open stream: No such file or directory in /home/grupakob/public_html/server.php on line 1
+[05-Jun-2017 16:51:53 UTC] PHP Warning:  include_once(): Failed opening 'analyticstracking.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/grupakob/public_html/server.php on line 1
+[05-Jun-2017 16:52:02 UTC] PHP Warning:  include_once(analyticstracking.php): failed to open stream: No such file or directory in /home/grupakob/public_html/server.php on line 1
+[05-Jun-2017 16:52:02 UTC] PHP Warning:  include_once(): Failed opening 'analyticstracking.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/grupakob/public_html/server.php on line 1
+[05-Jun-2017 16:52:07 UTC] PHP Warning:  include_once(analyticstracking.php): failed to open stream: No such file or directory in /home/grupakob/public_html/server.php on line 1
+[05-Jun-2017 16:52:07 UTC] PHP Warning:  include_once(): Failed opening 'analyticstracking.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/grupakob/public_html/server.php on line 1
+[05-Jun-2017 16:52:11 UTC] PHP Warning:  include_once(analyticstracking.php): failed to open stream: No such file or directory in /home/grupakob/public_html/server.php on line 1
+[05-Jun-2017 16:52:11 UTC] PHP Warning:  include_once(): Failed opening 'analyticstracking.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/grupakob/public_html/server.php on line 1
+[05-Jun-2017 16:52:14 UTC] PHP Warning:  include_once(analyticstracking.php): failed to open stream: No such file or directory in /home/grupakob/public_html/server.php on line 1
+[05-Jun-2017 16:52:14 UTC] PHP Warning:  include_once(): Failed opening 'analyticstracking.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/grupakob/public_html/server.php on line 1
+[10-Jun-2017 13:32:56 UTC] PHP Warning:  include_once(analyticstracking.php): failed to open stream: No such file or directory in /home/grupakob/public_html/server.php on line 1
+[10-Jun-2017 13:32:56 UTC] PHP Warning:  include_once(): Failed opening 'analyticstracking.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/grupakob/public_html/server.php on line 1
+[10-Jun-2017 17:39:35 UTC] PHP Warning:  include_once(analyticstracking.php): failed to open stream: No such file or directory in /home/grupakob/public_html/server.php on line 1
+[10-Jun-2017 17:39:35 UTC] PHP Warning:  include_once(): Failed opening 'analyticstracking.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/grupakob/public_html/server.php on line 1
+[24-Jul-2017 11:47:16 UTC] PHP Warning:  include_once(analyticstracking.php): failed to open stream: No such file or directory in /home/grupakob/public_html/server.php on line 1
+[24-Jul-2017 11:47:16 UTC] PHP Warning:  include_once(): Failed opening 'analyticstracking.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/grupakob/public_html/server.php on line 1
+[24-Jul-2017 11:47:27 UTC] PHP Warning:  include_once(analyticstracking.php): failed to open stream: No such file or directory in /home/grupakob/public_html/server.php on line 1
+[24-Jul-2017 11:47:27 UTC] PHP Warning:  include_once(): Failed opening 'analyticstracking.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/grupakob/public_html/server.php on line 1
+[29-Jul-2017 18:48:02 UTC] PHP Warning:  include_once(analyticstracking.php): failed to open stream: No such file or directory in /home/grupakob/public_html/server.php on line 1
+[29-Jul-2017 18:48:02 UTC] PHP Warning:  include_once(): Failed opening 'analyticstracking.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/grupakob/public_html/server.php on line 1
+[29-Jul-2017 19:13:03 UTC] PHP Warning:  include_once(analyticstracking.php): failed to open stream: No such file or directory in /home/grupakob/public_html/server.php on line 1
+[29-Jul-2017 19:13:03 UTC] PHP Warning:  include_once(): Failed opening 'analyticstracking.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/grupakob/public_html/server.php on line 1
+[16-Aug-2017 21:04:03 UTC] PHP Warning:  include_once(analyticstracking.php): failed to open stream: No such file or directory in /home/grupakob/public_html/server.php on line 1
+[16-Aug-2017 21:04:03 UTC] PHP Warning:  include_once(): Failed opening 'analyticstracking.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/grupakob/public_html/server.php on line 1
+[11-Sep-2017 19:06:59 UTC] PHP Warning:  include_once(analyticstracking.php): failed to open stream: No such file or directory in /home/grupakob/public_html/server.php on line 1
+[11-Sep-2017 19:06:59 UTC] PHP Warning:  include_once(): Failed opening 'analyticstracking.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/grupakob/public_html/server.php on line 1
+[22-Sep-2017 09:15:41 UTC] PHP Warning:  include_once(analyticstracking.php): failed to open stream: No such file or directory in /home/grupakob/public_html/server.php on line 1
+[22-Sep-2017 09:15:41 UTC] PHP Warning:  include_once(): Failed opening 'analyticstracking.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/grupakob/public_html/server.php on line 1
+[22-Sep-2017 09:15:54 UTC] PHP Warning:  include_once(analyticstracking.php): failed to open stream: No such file or directory in /home/grupakob/public_html/server.php on line 1
+[22-Sep-2017 09:15:54 UTC] PHP Warning:  include_once(): Failed opening 'analyticstracking.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/grupakob/public_html/server.php on line 1
+[22-Sep-2017 09:15:59 UTC] PHP Warning:  include_once(analyticstracking.php): failed to open stream: No such file or directory in /home/grupakob/public_html/server.php on line 1
+[22-Sep-2017 09:15:59 UTC] PHP Warning:  include_once(): Failed opening 'analyticstracking.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/grupakob/public_html/server.php on line 1
+[26-Oct-2017 06:30:24 UTC] PHP Warning:  include_once(analyticstracking.php): failed to open stream: No such file or directory in /home/grupakob/public_html/server.php on line 1
+[26-Oct-2017 06:30:24 UTC] PHP Warning:  include_once(): Failed opening 'analyticstracking.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/grupakob/public_html/server.php on line 1
+[02-Nov-2017 12:36:11 UTC] PHP Warning:  include_once(analyticstracking.php): failed to open stream: No such file or directory in /home/grupakob/public_html/server.php on line 1
+[02-Nov-2017 12:36:11 UTC] PHP Warning:  include_once(): Failed opening 'analyticstracking.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/grupakob/public_html/server.php on line 1
+[11-Nov-2017 12:26:51 UTC] PHP Warning:  include_once(analyticstracking.php): failed to open stream: No such file or directory in /home/grupakob/public_html/server.php on line 1
+[11-Nov-2017 12:26:51 UTC] PHP Warning:  include_once(): Failed opening 'analyticstracking.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/grupakob/public_html/server.php on line 1
+[11-Nov-2017 12:27:00 UTC] PHP Warning:  include_once(analyticstracking.php): failed to open stream: No such file or directory in /home/grupakob/public_html/server.php on line 1
+[11-Nov-2017 12:27:00 UTC] PHP Warning:  include_once(): Failed opening 'analyticstracking.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/grupakob/public_html/server.php on line 1
+[11-Nov-2017 12:27:04 UTC] PHP Warning:  include_once(analyticstracking.php): failed to open stream: No such file or directory in /home/grupakob/public_html/server.php on line 1
+[11-Nov-2017 12:27:04 UTC] PHP Warning:  include_once(): Failed opening 'analyticstracking.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/grupakob/public_html/server.php on line 1
+[30-Jan-2018 19:54:43 UTC] PHP Warning:  include_once(analyticstracking.php): failed to open stream: No such file or directory in /home/grupakob/public_html/server.php on line 1
+[30-Jan-2018 19:54:43 UTC] PHP Warning:  include_once(): Failed opening 'analyticstracking.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/grupakob/public_html/server.php on line 1
+[23-Feb-2018 18:24:19 UTC] PHP Warning:  include_once(analyticstracking.php): failed to open stream: No such file or directory in /home/grupakob/public_html/server.php on line 1
+[23-Feb-2018 18:24:19 UTC] PHP Warning:  include_once(): Failed opening 'analyticstracking.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/grupakob/public_html/server.php on line 1
+[23-Feb-2018 18:42:00 UTC] PHP Warning:  include_once(analyticstracking.php): failed to open stream: No such file or directory in /home/grupakob/public_html/server.php on line 1
+[23-Feb-2018 18:42:00 UTC] PHP Warning:  include_once(): Failed opening 'analyticstracking.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/grupakob/public_html/server.php on line 1
+[20-Mar-2018 09:35:00 UTC] PHP Warning:  include_once(analyticstracking.php): failed to open stream: No such file or directory in /home/grupakob/public_html/server.php on line 1
+[20-Mar-2018 09:35:00 UTC] PHP Warning:  include_once(): Failed opening 'analyticstracking.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/grupakob/public_html/server.php on line 1
+[28-Apr-2018 13:05:25 UTC] PHP Warning:  include_once(analyticstracking.php): failed to open stream: No such file or directory in /home/grupakob/public_html/server.php on line 1
+[28-Apr-2018 13:05:25 UTC] PHP Warning:  include_once(): Failed opening 'analyticstracking.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/grupakob/public_html/server.php on line 1
+[28-Apr-2018 19:58:51 UTC] PHP Warning:  include_once(analyticstracking.php): failed to open stream: No such file or directory in /home/grupakob/public_html/server.php on line 1
+[28-Apr-2018 19:58:51 UTC] PHP Warning:  include_once(): Failed opening 'analyticstracking.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/grupakob/public_html/server.php on line 1
+[28-Apr-2018 20:01:03 UTC] PHP Warning:  include_once(analyticstracking.php): failed to open stream: No such file or directory in /home/grupakob/public_html/server.php on line 1
+[28-Apr-2018 20:01:03 UTC] PHP Warning:  include_once(): Failed opening 'analyticstracking.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/grupakob/public_html/server.php on line 1

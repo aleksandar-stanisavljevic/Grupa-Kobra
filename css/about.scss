@@ -1,0 +1,277 @@
+$color_text: rgba(0, 0, 0, 0.8);
+$table_border_style: 1px solid #6790B1;
+$table_header_color: #f9f9f9;
+$table_header_background: #6790B1;
+$background_mission: #E0E6E4;
+$mail_color: #428bca;
+$font: Helvetica,Arial,sans-serif;
+$width1024: 1024px;
+$width960: 960px;
+$width768: 768px;
+$width520: 520px;
+
+@mixin about_style {
+  font-family: $font;
+  color: $color_text;
+  margin-top: 5%;
+}
+
+@mixin border_style ($width, $color){
+  border: {
+    width: $width;
+    style: solid;
+    color: $color;
+  }
+}
+
+@mixin border_style_left ($width, $color){
+  border-left: {
+    width: $width;
+    style: solid;
+    color: $color;
+  }
+}
+
+#about > #organisation {
+  @include about_style;
+  margin-bottom: 5%;
+
+  div:first-child {
+    display: inline-block;
+    width: 61%;
+    text-align: justify;
+    margin-left: 1%;
+    margin-right: 2%;
+
+    #history {
+      color: $color_text;
+      font-size: 35px;
+    }
+  }
+
+  div:nth-child(2) {
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+    margin-left: 2%;
+    margin-top: 5%;
+
+    table {
+      @include border_style(1px, #6790B1);
+      border-radius: 5px;
+
+      th {
+        @include border_style(1px, #6790B1);
+        width: 100%;
+        background: $table_header_background;
+        color: $table_header_color;
+        font-weight: normal;
+        text-align: left;
+        padding: 10px;
+      }
+
+      td {
+        border-top: $table_border_style;
+        padding: 10px;
+      }
+    }
+
+    td:first-child {
+      font-weight: bold;
+    }
+  }
+
+  & > div > div {
+    margin-top: 5%;
+    background-color: $background_mission;
+    padding: 2% 4% 2% 4%;
+    @include border_style(1px, rgba(0, 0, 0, 0.4));
+    border-radius: 5px;
+
+    #mission {
+      @include border_style_left(5px, rgba(0, 0, 0, 0.4));
+      padding: 4% 0 4% 4%;
+    }
+  }
+}
+
+#about > #people_data {
+  @include about_style;
+
+  img {
+    @include border_style(1px, rgba(0, 0, 0, 0.5));
+    border-radius: 50%;
+    padding: 5%;
+    width: 112px;
+  }
+
+  & > div {
+    display: inline-block;
+    margin-right: 5%;
+    margin-bottom: 5%;
+  }
+
+  & > div > div:nth-child(1) {
+    font-size: 150%;
+  }
+
+  & > div > div:nth-child(2) {
+    @include border_style_left(4px, #cbcccd);
+    padding-left: 10%;
+    margin-top: 8%;
+    width: 100%;
+  }
+
+  p {
+    margin: 0;
+    font-size: 80%;
+  }
+
+  p:nth-child(2) {
+    a {
+      text-decoration: none;
+      color: $color_text;
+    }
+
+    &::before {
+      content: '\260E  ';
+    }
+  }
+
+  p:nth-child(3) {
+    a {
+      text-decoration: none;
+      color: $mail_color;
+    }
+
+    &::before {
+      content: '\2709  ';
+    }
+  }
+
+  p:first-child {
+    margin-bottom: 10%;
+    font-size: 110%;
+  }
+}
+
+@media only screen and (min-width: $width960) and (max-width: $width1024 - 1) {
+
+  #about > #organisation {
+
+    div:first-child {
+      width: 55%;
+    }
+
+    div:nth-child(2) {
+      width: 38%;
+      margin-top: 7%;
+    }
+  }
+
+  #about > #people_data {
+
+    & > div {
+      margin-right: 6%;
+      margin-bottom: 6%;
+    }
+  }
+}
+
+@media only screen and (min-width: $width768) and (max-width: $width960 - 1) {
+
+  #about > #organisation {
+
+    div:first-child {
+      width: 55%;
+    }
+
+    div:nth-child(2) {
+      width: 38%;
+      margin-top: 6%;
+    }
+  }
+
+  #about > #people_data {
+
+    & > div {
+      margin-right: 7%;
+      margin-bottom: 7%;
+    }
+  }
+}
+
+@media only screen and (min-width: $width520) and (max-width: $width768 - 1) {
+
+
+
+  #about > #organisation {
+    @include about_style;
+
+    div:first-child {
+      width: 98%;
+      margin-right: 1%;
+    }
+
+    div:nth-child(2) {
+      width: 98%;
+      margin-top: 5%;
+      margin-left: 1%;
+
+      table {
+        width: 100%;
+      }
+    }
+  }
+
+  #about > #people_data {
+    @include about_style;
+
+    & > div {
+      margin-right: 8%;
+      margin-bottom: 8%;
+    }
+  }
+}
+
+@media only screen and (max-width: $width520 - 1) {
+
+  @mixin about_style {
+    font-family: $font;
+    color: $color_text;
+    margin-top: 4%;
+  }
+
+  #about > #organisation {
+    @include about_style;
+    font-size: 14px;
+
+    div:first-child {
+      width: 98%;
+      margin-right: 1%;
+
+      #history {
+        font-size: 28px;
+      }
+    }
+
+    div:nth-child(2) {
+      width: 98%;
+      margin-top: 5%;
+      margin-left: 1%;
+
+      table {
+        width: 100%;
+      }
+    }
+ }
+
+  #about > #people_data {
+    @include about_style;
+
+    & > div {
+      margin-right: 8%;
+      margin-bottom: 8%;
+    }
+  }
+}

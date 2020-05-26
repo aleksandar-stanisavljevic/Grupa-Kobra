@@ -1,0 +1,592 @@
+$font: Helvetica,Arial,sans-serif;
+$borderButton: rgba(0, 0, 0, 0.4);
+$mapColor: #d9534f;
+$fontColor: rgba(0, 0, 0, 0.8);
+$fontButtonColor: #f9f9f9;
+$inputFocusColor: rgba(81, 203, 238, 1);
+$inputBorder: #DDDDDD;
+$buttonCallColor: #428bca;
+$buttonCallHover: #3071a9;
+$buttonCallActive: #2a6496;
+$buttonSkypeColor: #5bc0de;
+$buttonSkypeHover: #31b0d5;
+$buttonSkypeActive: #28a1c5;
+$buttonEmailColor: #5cb85c;
+$buttonEmailHover: #449d44;
+$buttonEmailActive: #3d8b3d;
+$textErrorColor: red;
+$width1024: 1024px;
+$width960: 960px;
+$width768: 768px;
+$width520: 520px;
+
+@mixin buttonContactStyle {
+  padding: 10px;
+  margin: 0;
+  border-radius: 4px;
+  color: $fontButtonColor;
+  text-shadow: 0px -1px $borderButton;
+}
+
+@mixin button_style ($backgroundButton, $hoverButton, $activeButton){
+  @include buttonContactStyle;
+  background: $backgroundButton;
+  border: 1px solid $backgroundButton;
+
+  &:hover{
+    background: $hoverButton;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:visited{
+    background: $backgroundButton;
+    border: 1px solid $backgroundButton;
+  }
+
+  &:active{
+    background: $activeButton;
+    border: 1px solid $borderButton;
+  }
+
+  img {
+    padding: 0;
+    margin: 0;
+    vertical-align: bottom;
+  }
+}
+
+#contact > div {
+  margin-bottom: 5%;
+  font-family: $font;
+  color: $fontColor;
+  margin-top: 5%;
+  width: 100%;
+
+  & > div {
+    font-size: 35px;
+    display: inline-block;
+    margin-left: 1%;
+    margin-right: 2%;
+
+    #contact_data {
+      font-size: 18px;
+      margin-top: 20%;
+      margin-bottom: 20%;
+    }
+
+    & > div {
+      font-size: 14px;
+
+      a {
+        text-decoration: none;
+        color: $fontColor;
+
+        #mail_contact {
+          color: $buttonCallColor;
+        }
+      }
+    }
+  }
+
+  #call_button {
+    @include button_style ($buttonCallColor, $buttonCallHover, $buttonCallActive);
+  }
+
+  #skype_button {
+    @include button_style ($buttonSkypeColor, $buttonSkypeHover, $buttonSkypeActive);
+  }
+
+  #email_button {
+    @include button_style ($buttonEmailColor, $buttonEmailHover, $buttonEmailActive);
+  }
+
+  #button_contact {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  div#map {
+    width: 100%;
+    margin-top: 2%;
+    margin-left: 0;
+
+    table {
+      text-align: center;
+      width: 95%;
+      border-collapse: separate;
+      border-spacing: 0;
+
+      iframe {
+        height: 450px;
+      }
+    }
+
+    th {
+      border: 2px solid $mapColor;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      background: $mapColor;
+      text-align: left;
+      padding: 1% 1% 1% 3%;
+      font-size: 22px;
+      font-weight: normal;
+      font-family: $font;
+      color: $fontButtonColor;
+    }
+
+    td {
+      padding: 2%;
+      border: 2px solid $mapColor;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+  }
+
+  #input_data {
+    width: 100%;
+
+    form {
+      width: 69%;
+      display: inline-block;
+    }
+
+    div {
+      display: inline-block;
+      vertical-align: top;
+      width: 29%;
+    }
+
+    #messageInput {
+      width: 100%;
+      overflow-wrap: break-word;
+      text-align: justify;
+      white-space: pre-wrap;
+    }
+
+    label {
+      font-size: 15px;
+      font-weight: bold;
+      display:inline-block;
+      width: 15%;
+      text-align: right;
+    }
+
+    label[for="contact_input"] {
+      text-align: left;
+      margin-right: 1%;
+      width: 34%;
+      font-size: 15px;
+    }
+
+    label[for="none_input"] {
+      width: 15%;
+    }
+
+    input, textarea {
+      padding: 8px;
+      border-radius: 5px;
+      -webkit-transition: all 0.20s ease-in-out;
+      -moz-transition: all 0.20s ease-in-out;
+      -ms-transition: all 0.20s ease-in-out;
+      -o-transition: all 0.20s ease-in-out;
+      outline: none;
+      margin-left: 10px;
+      border: 1px solid $inputBorder;
+      font-family: $font;
+      width: 60%;
+    }
+
+    #contact_input {
+      width: auto;
+      margin: 0 0 12px 10px;
+    }
+
+    label[for="feedback_input"] {
+      vertical-align: top;
+    }
+
+    input:focus, textarea:focus {
+      box-shadow: 0 0 5px $inputFocusColor;
+      border: 1px solid $inputFocusColor;
+    }
+
+    #requiredContactFields {
+      margin-left: 10px;
+      font-family: $font;
+      font-size: 12px;
+      color: rgba(0, 0, 0, 0.8);
+    }
+
+    #submit_contact {
+      margin-left: 16%;
+      margin-bottom: 2%;
+      background: $buttonCallColor;
+      padding: 10px;
+      border: 1px solid $buttonCallColor;
+      border-radius: 4px;
+      color: $fontButtonColor;
+      text-shadow:0px -1px $borderButton;
+
+      &:hover:enabled{
+        background: $buttonCallHover;
+      }
+
+      &:focus {
+        outline: none;
+      }
+
+      &:visited{
+        background: $buttonCallColor;
+        border: 1px solid $buttonCallColor;
+      }
+
+      &:active{
+        background: $buttonCallActive;
+        border: 1px solid $borderButton;
+      }
+    }
+
+    #submit_contact[disabled] {
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+
+    #sentData {
+      font-size: 15px;
+      margin-left: 30%;
+      color: $buttonCallColor;
+      font-weight: bold;
+    }
+
+    .errorMessage {
+      color: $textErrorColor;
+      font-weight: bold;
+      font-size: 12px;
+      display: none;
+      margin-left: 10px;
+      width: 50%;
+    }
+
+    .none_input, #yourSelectInput, #select {
+      display: none;
+    }
+
+    .inputData {
+      font-weight: bold;
+    }
+
+    select {
+      border-radius: 4px;
+      border: 1px solid $inputBorder;
+      color: $fontColor;
+      font-size: 14px;
+      margin: 5px 0px 8px 0px;
+      padding: 7px;
+      width: 22.5%;
+
+      &:focus {
+        box-shadow: 0 0 5px $inputFocusColor;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $width960) and (max-width: $width1024 - 1) {
+
+  #contact > div {
+
+    #input_data {
+      form {
+        width: 67%;
+      }
+      div {
+        width: 31%;
+      }
+      label[for="contact_input"] {
+        width: 37%;
+      }
+      input, textarea {
+        width: 65%;
+      }
+      select {
+        width: 24%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $width768) and (max-width: $width960 - 1) {
+
+  #contact > div {
+
+    div#map {
+      table {
+        iframe {
+          height: 350px;
+        }
+      }
+    }
+
+    #input_data {
+
+      p:first-child {
+        font-size: 28px;
+      }
+
+      div {
+        h3:first-child {
+          font-size: 14px;
+        }
+      }
+
+      label {
+        font-size: 14px;
+      }
+
+      label[for="contact_input"] {
+        margin-right: 0%;
+        width: 42%;
+        font-size: 14px;
+      }
+
+      input, textarea {
+        width: 72%;
+      }
+
+      #sentData {
+        font-size: 14px;
+        margin-left: 20%;
+      }
+
+      select {
+        font-size: 13px;
+        padding: 5px;
+        width: 27%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $width520) and (max-width: $width768 - 1) {
+
+  @mixin buttonContactStyle {
+    padding: 7px;
+  }
+  @mixin button_style ($backgroundButton, $hoverButton, $activeButton){
+    @include buttonContactStyle;
+  }
+
+  #contact > div {
+
+    & > div {
+      font-size: 32px;
+
+      #contact_data {
+        font-size: 16px;
+      }
+    }
+
+    #call_button {
+      @include button_style ($buttonCallColor, $buttonCallHover, $buttonCallActive);
+    }
+
+    #skype_button {
+      @include button_style ($buttonSkypeColor, $buttonSkypeHover, $buttonSkypeActive);
+    }
+
+    #email_button {
+      @include button_style ($buttonEmailColor, $buttonEmailHover, $buttonEmailActive);
+    }
+
+    div#map {
+
+      table {
+
+        iframe {
+          height: 300px;
+        }
+      }
+
+      th {
+        font-size: 16px;
+      }
+
+      td {
+        padding: 2% 2% 0 2%;
+      }
+    }
+
+    #input_data {
+
+      p:first-child {
+        font-size: 25px;
+      }
+
+      form {
+        width: 100%;
+      }
+
+      div {
+        display: none;
+      }
+
+      label {
+        font-size: 13px;
+      }
+
+      label[for="contact_input"] {
+        margin-right: 0%;
+        width: 39%;
+        font-size: 13px;
+      }
+
+      input, textarea {
+        padding: 6px;
+        width: 70%;
+      }
+
+      #requiredContactFields {
+        font-size: 10px;
+      }
+
+      #submit_contact {
+        padding: 8px;
+      }
+
+      #sentData {
+        font-size: 13px;
+        margin-left: 27%;
+      }
+
+      .errorMessage {
+        font-size: 10px;
+        width: 50%;
+      }
+
+      select {
+        font-size: 12px;
+        padding: 6px;
+        width: 27%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $width520 - 1) {
+
+  @mixin buttonContactStyle {
+    padding: 5px;
+  }
+  @mixin button_style ($backgroundButton, $hoverButton, $activeButton){
+    @include buttonContactStyle;
+  }
+
+  #contact > div {
+
+    & > div {
+      font-size: 30px;
+
+      #contact_data {
+        font-size: 15px;
+      }
+    }
+
+    #call_button {
+      @include button_style ($buttonCallColor, $buttonCallHover, $buttonCallActive);
+    }
+
+    #skype_button {
+      @include button_style ($buttonSkypeColor, $buttonSkypeHover, $buttonSkypeActive);
+    }
+
+    #email_button {
+      @include button_style ($buttonEmailColor, $buttonEmailHover, $buttonEmailActive);
+    }
+
+    div#map {
+
+      table {
+
+        iframe {
+          height: 250px;
+        }
+      }
+
+      th {
+        font-size: 14px;
+      }
+
+      td {
+        padding: 1% 1% 0 1%;
+      }
+    }
+
+    #input_data {
+
+      p:first-child {
+        font-size: 20px;
+      }
+
+      form {
+        width: 100%;
+      }
+
+      div {
+        display: none;
+      }
+
+      label {
+        font-size: 11px;
+        width: 17%;
+      }
+
+      label[for="none_input"] {
+        width: 17%;
+      }
+
+      label[for="contact_input"] {
+        margin-right: 0%;
+        width: 27%;
+        font-size: 9px;
+      }
+
+      input, textarea {
+        padding: 5px;
+        width: 70%;
+        margin-left: 5px;
+      }
+
+      #contact_input {
+        margin: 0 0 12px 5px;
+      }
+
+      #requiredContactFields {
+        font-size: 9px;
+        margin-left: 5px;
+      }
+
+      #submit_contact {
+        padding: 8px;
+      }
+
+      #sentData {
+        display: none;
+      }
+
+      .errorMessage {
+        font-size: 8px;
+        width: 50%;
+        margin-left: 5px;
+      }
+
+      select {
+        font-size: 9px;
+        padding: 1px;
+        width: 36%;
+      }
+    }
+  }
+}

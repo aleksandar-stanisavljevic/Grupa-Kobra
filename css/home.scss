@@ -1,0 +1,251 @@
+$font: Helvetica,Arial,sans-serif;
+$backgroundDate: #d9534f;
+$colorDate: white;
+$imgBorderColor: rgba(0, 0, 0, 0.15);
+$colorText: rgba(0, 0, 0, 0.8);
+$width1024: 1024px;
+$width960: 960px;
+$width768: 768px;
+$width520: 520px;
+
+@mixin image_style {
+  display: inline-block;
+  width: 12%;
+  padding: 1%;
+  vertical-align: middle;
+
+  img {
+    width: 100%;
+    border: 1px solid $imgBorderColor;
+    padding: 3px;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+}
+
+@mixin date_style {
+  display: inline-block;
+  width: 6%;
+  margin-right: 1%;
+  margin-left: 1%;
+  vertical-align: top;
+
+  p {
+    font-family: $font;
+    border-radius: 3px;
+    background: $backgroundDate;
+    color: $colorDate;
+    text-align: center;
+    font-size: 12px;
+    padding: 2% 0 2% 0;
+  }
+}
+
+@mixin news_text_style {
+  display: inline-block;
+  width: 76%;
+  padding-right: 1%;
+  padding-left: 1%;
+  vertical-align: top;
+  text-align: justify;
+  font-family: $font;
+  color: $colorText;
+}
+
+#home > div:nth-of-type(odd) {
+  box-sizing: border-box;
+  line-height: auto;
+
+  div:first-child {
+    @include image_style;
+  }
+  div:nth-child(2) {
+    @include news_text_style;
+  }
+  div:last-child {
+    @include date_style;
+  }
+}
+
+#home > div:nth-of-type(even) {
+  box-sizing: border-box;
+  line-height: auto;
+
+  div:first-child {
+    @include date_style;
+  }
+  div:nth-child(2) {
+    @include news_text_style;
+  }
+  div:last-child {
+    @include image_style;
+  }
+}
+
+@media only screen and (min-width: $width960) and (max-width: $width1024 - 1) {
+
+  @mixin date_style {
+    width: 7%;
+
+    p {
+      font-size: 11px;
+      padding: 4% 0 4% 0;
+    }
+  }
+
+  @mixin news_text_style {
+    width: 75%;
+    font-size: 15px;
+  }
+
+  #home > div:nth-of-type(odd) {
+
+    div:nth-child(2) {
+      @include news_text_style;
+    }
+    div:last-child {
+      @include date_style;
+    }
+  }
+
+  #home > div:nth-of-type(even) {
+
+    div:first-child {
+      @include date_style;
+    }
+    div:nth-child(2) {
+      @include news_text_style;
+    }
+  }
+}
+
+@media only screen and (min-width: $width768) and (max-width: $width960 - 1) {
+
+  @mixin date_style {
+    width: 8%;
+
+    p {
+      font-size: 11px;
+      padding: 4% 0 4% 0;
+    }
+  }
+
+  @mixin news_text_style {
+    width: 74%;
+    font-size: 14px;
+  }
+
+  #home > div:nth-of-type(odd) {
+
+    div:nth-child(2) {
+      @include news_text_style;
+    }
+    div:last-child {
+      @include date_style;
+    }
+  }
+
+  #home > div:nth-of-type(even) {
+
+    div:first-child {
+      @include date_style;
+    }
+    div:nth-child(2) {
+      @include news_text_style;
+    }
+  }
+}
+
+@media only screen and (min-width: $width520) and (max-width: $width768 - 1) {
+
+  @mixin image_style {
+    width: 15%;
+  }
+
+  @mixin date_style {
+    width: 9%;
+
+    p {
+      font-size: 9px;
+      padding: 4% 0 4% 0;
+    }
+  }
+
+  @mixin news_text_style {
+    width: 70%;
+    font-size: 12px;
+  }
+
+  #home > div:nth-of-type(odd) {
+
+    div:first-child {
+      @include image_style;
+    }
+    div:nth-child(2) {
+      @include news_text_style;
+    }
+    div:last-child {
+      @include date_style;
+    }
+  }
+
+  #home > div:nth-of-type(even) {
+
+    div:first-child {
+      @include date_style;
+    }
+    div:nth-child(2) {
+      @include news_text_style;
+    }
+    div:last-child {
+      @include image_style;
+    }
+  }
+}
+
+@media only screen and (max-width: $width520 - 1) {
+
+  @mixin image_style {
+    width: 17%;
+  }
+
+  @mixin date_style {
+    width: 10%;
+
+    p {
+      font-size: 6px;
+      padding: 4% 0 4% 0;
+    }
+  }
+
+  @mixin news_text_style {
+    width: 67%;
+    font-size: 10px;
+  }
+
+  #home > div:nth-of-type(odd) {
+
+    div:first-child {
+      @include image_style;
+    }
+    div:nth-child(2) {
+      @include news_text_style;
+    }
+    div:last-child {
+      @include date_style;
+    }
+  }
+
+  #home > div:nth-of-type(even) {
+
+    div:first-child {
+      @include date_style;
+    }
+    div:nth-child(2) {
+      @include news_text_style;
+    }
+    div:last-child {
+      @include image_style;
+    }
+  }
+}

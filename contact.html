@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="grupakobra.rs, grupa kobra, kobra, www.grupakobra.rs">
+  <meta name="description" content="Grupa Kobra je omladinska organizacija nastala iz dosade mladih ljudi koji nisu imali ni jedno mesto u svojim selima (D.Trnava i D.Toponica kod Niša">
+  <meta property="og:title" content="Grupa Kobra">
+
+  <title>Grupa Kobra</title>
+
+  <link href="images/logo.png" rel="icon">
+  <link rel="stylesheet" href="css/mystyle.css">
+
+</head>
+<body onresize="collapseMenuHidden()">
+
+<div id="container">
+  <nav>
+    <a href="index.html">
+      <img src="images/logo.png" alt="Logo Kobra">
+    </a>
+    <a id="collapseNav">
+      <img onclick="collapseMenu()" src="images/menu.png" alt="Collapse Menu">
+    </a>
+    <div id="newNav"></div>
+    <ul>
+      <li class="navbar">
+        <a href="index.html">
+          <img src="images/home.png" alt="Home"> Početna
+        </a>
+      </li>
+      <li class="navbar">
+        <a href="about.html">
+          <img src="images/info.png" alt="About"> O nama
+        </a>
+      </li>
+      <li class="navbar">
+        <a href="results.html">
+          <img src="images/plane.png" alt="Results"> Rezultati
+        </a>
+      </li>
+      <li class="navbar">
+        <a href="camp.html">
+          <img src="images/summer.png" alt="Camp"> Summer in Toponica
+        </a>
+      </li>
+      <li class="navbar">
+        <a href="eco.html">
+          <img src="images/leaf.png" alt="Eco"> Eko kontakt tačka
+        </a>
+      </li>
+      <li class="navbar">
+        <a href="partners.html">
+          <img src="images/partners.png" alt="Partners"> Partneri i donatori
+        </a>
+      </li>
+      <li class="navbar">
+        <a href="contact.html">
+          <img src="images/envelope.png" alt="Contact"> Kontakt
+        </a>
+      </li>
+    </ul>
+    </ul>
+  </nav>
+
+  <header>
+    <div>Grupa Kobra</div>
+    <div>
+      <img src="images/logo.png" alt="Logo Kobra">
+    </div>
+    <div>Mi smo grupa mladih ljudi koji menjaju stvari u svojoj lokalnoj zajednici.</div>
+  </header>
+
+  <div id="contact">
+    <p>Kontakt</p>
+    <p>Kontakt</p>
+    <hr>
+    <div>
+      <div>
+        <p>Informacije</p>
+        <p id="contact_data">Kontakt podaci</p>
+        <div>
+          <p><a href="https://www.google.rs/maps/place/%D0%94%D0%BE%D1%9A%D0%B0+%D0%A2%D0%BE%D0%BF%D0%BE%D0%BD%D0%B8%D1%86%D0%B0/@43.4090049,21.7691087,14z/data=!3m1!4b1!4m5!3m4!1s0x4755cbce3cd73f3f:0xd24e6b69f810a4c9!8m2!3d43.4096259!4d21.7890789" target="_blank">Donja Toponica, BB<br>Niš</a></p>
+          <p><span>&phone;</span> <a href="tel:+381604601645">+381 60 4601645</a></p>
+          <a href="mailto:milangrupakobra@gmail.com"> <span>&#9993;</span> <span id="mail_contact">milangrupakobra@gmail.com</span></a><br>
+        </div>
+        <div id="button_contact">
+          <button id="call_button" type="button" onclick="buttonEvent('tel:+381644154268')"><img src="images/call.png" alt="Phone"> Call</button>
+          <button id="skype_button" type="button" onclick="buttonEvent('skype:aleksandarpmau?call')"><img src="images/skype.png" alt="Skype"> Skype</button>
+          <button id="email_button" type="button" onclick="buttonEvent('mailto:milangrupakobra@gmail.com')"><img src="images/envelope.png" alt="Email"> Email</button>
+        </div>
+      </div>
+      <hr>
+
+      <div id="input_data">
+        <p>Pošalji nam poruku</p>
+        <form id="myform" onsubmit="emailjs.sendForm('default_service', 'email_tempate', this); return false;" method="post">
+          <label></label>
+          <span id="requiredContactFields">* Polja označena (*) su obavezna.</span><br>
+          <label for="name">Ime*</label>
+          <input type="text" name="name" id="name" size="60" placeholder="Unesi tvoje ime" oninput="showInputData(); errorValidate('nameInput', inputBoxName, inputBoxLastname, 0)"><br>
+          <label class="none_input"></label>
+          <span class="errorMessage">Molim Vas unesite Vaše ime.<br></span>
+          <label for="lastname">Prezime*</label>
+          <input type="text" name="lastname" id="lastname" size="60" placeholder="Unesi tvoje prezime" oninput="showInputData(); errorValidate('lastnameInput', inputBoxLastname, inputBoxName, 1)"><br>
+          <label class="none_input"></label>
+          <span class="errorMessage">Molim Vas unesite Vaše prezime.<br></span>
+          <label for="phone_input">Telefon</label>
+          <input type="tel" name="phone_input" id="phone_input" size="60" placeholder="Unesi broj telefona" oninput="showInputData()"><br>
+          <label for="email_input">Email*</label>
+          <input type="email" name="email_input" id="email_input" size="60" placeholder="Unesi email adresu" oninput="showInputData()"><br>
+          <label class="none_input"></label>
+          <span class="errorMessage">Molim Vas unesite Vaš email.<br></span>
+          <span class="errorMessage">Molim Vas unesite validnu email adresu.<br></span>
+          <label for="none_input"></label>
+          <input type="checkbox" name="contact_input" id="contact_input" onclick="checkboxClick()">
+          <label for="contact_input">Želiš da te kontaktiramo?</label>
+          <select id="select" name="select_option" onclick="showInputData()">
+            <option value="" disabled selected>Izaberi opciju</option>
+            <option value="mejlom.">Email</option>
+            <option value="telefonom.">Telefon</option>
+          </select><br>
+          <label for="feedback_input">Tvoja poruka</label>
+          <textarea rows="12" cols="58" name="feedback_input" id="feedback_input" placeholder="Unesi poruku" oninput="showInputData()"></textarea><br>
+          <button type="submit" id="submit_contact" disabled>Pošalji</button>
+          <span id="sentData"></span>
+        </form>
+
+        <div>
+          <h3>Tvoji uneti podaci:</h3><br>
+          <p>Ime: <span id="nameInput" class="inputData"></span></p>
+          <p>Prezime: <span id="lastnameInput" class="inputData"></span></p>
+          <p>Telefon: <span id="phoneInput" class="inputData"></span></p>
+          <p>Email: <span id="emailInput" class="inputData"></span></p>
+          <p id="yourSelectInput">Želiš da te kontaktiramo <span id="selectInput" class="inputData"></span></p>
+          <p>Tvoja poruka: <div id="messageInput" class="inputData"></div></p>
+        </div>
+      </div>
+      <hr>
+
+      <div id="map">
+        <table align="center">
+          <tr>
+            <th>Naša lokacija</th>
+          </tr>
+          <tr>
+            <td>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23187.772336910075!2d21.7691087330458!3d43.40897376433336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4755cbce3cd73f3f%3A0xd24e6b69f810a4c9!2sDonja+Toponica!5e0!3m2!1sen!2srs!4v1474385620129" width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div>
+    <h5>Linkovi</h5>
+    <p><a href="index.html">Home</a></p>
+    <p><a href="about.html">O nama</a></p>
+    <p><a href="results.html">Rezultati</a></p>
+    <p><a href="camp.html">Summer in Toponica</a></p>
+    <p><a href="eco.html">Eko kontakt tačka</a></p>
+    <p><a href="partners.html">Partneri i donatori</a></p>
+    <p><a href="contact.html">Kontakt</a></p>
+  </div>
+
+  <div>
+    <h5>Naša adresa</h5>
+    <address>
+      <p>
+        <a href="https://www.google.rs/maps/place/%D0%94%D0%BE%D1%9A%D0%B0+%D0%A2%D0%BE%D0%BF%D0%BE%D0%BD%D0%B8%D1%86%D0%B0/@43.4090049,21.7691087,14z/data=!3m1!4b1!4m5!3m4!1s0x4755cbce3cd73f3f:0xd24e6b69f810a4c9!8m2!3d43.4096259!4d21.7890789" target="_blank">Donja Toponica, BB Niš</a>
+      </p>
+      <p>
+        <span>&phone;</span>
+        <a href="tel:+381604601645">+381 604601645</a>
+      </p>
+      <p>
+        <a href="mailto:milangrupakobra@gmail.com">
+          <span>&#9993;</span> milangrupakobra@gmail.com
+        </a>
+      </p>
+    </address>
+  </div>
+
+  <div>
+    <a href="https://www.facebook.com/kobratoponica/" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+    <a href="https://twitter.com/grupakobra" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+    <a href="https://www.youtube.com/user/grupakobra" target="_blank"><img src="images/youtube.png" alt="YouTube"></a>
+    <a href="http://grupakobra.tumblr.com/" target="_blank"><img src="images/tumblr.png" alt="Tumblr"></a>
+  </div>
+
+  <p>© Copyright 2017. Grupa Kobra</p>
+
+</footer>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-99094922-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script src="js/collapseMenu.js"></script>
+<script src="js/contact.js"></script>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="js/email.js"></script>
+
+</body>
+</html>
